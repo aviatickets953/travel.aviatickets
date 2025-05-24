@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Авиабилеты</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header, footer {
+      background-color: #32a8dd;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      user-select: none;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .widget-container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      flex: 1 1 300px;
+      max-width: 400px;
+      min-height: 460px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      box-sizing: border-box;
+    }
+    .widget-container > script,
+    .widget-container > div {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100% !important;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+    }
+    .social-buttons {
+      display: flex;
+      gap: 20px;
+    }
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: white;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .contact-button:hover {
+      transform: scale(1.1);
+    }
+    .contact-button.telegram svg {
+      fill: #0088cc;
+    }
+    .contact-button.whatsapp svg {
+      fill: #25D366;
+    }
+    .contact-button svg {
+      width: 26px;
+      height: 26px;
+    }
+    .powered-by {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        padding: 20px 10px;
+      }
+      .widget-container {
+        max-width: 100%;
+        min-height: 420px;
+      }
+      .social-buttons {
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Поиск авиабилетов</h1>
+  </header>
+
+  <main>
+    <div class="widget-container">
+      <script async src="https://tpscr.com/content?currency=rub&trs=410735&shmarker=625829&show_hotels=false&powered_by=true&locale=ru&searchUrl=www.aviasales.com%2Fsearch&primary_override=%2332a8dd&color_button=%2332a8dd&color_icons=%2332a8dd&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%2332a8dd&border_radius=0&plain=false&promo_id=7879&campaign_id=100" charset="utf-8"></script>
+    </div>
+
+    <div class="widget-container">
+      <script async src="https://tpscr.com/content?currency=rub&trs=410735&shmarker=625829&searchUrl=www.aviasales.com%2Fsearch&locale=ru&powered_by=true&origin=LON&destination=BKK&one_way=true&only_direct=false&period=year&range=7%2C11&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+    </div>
+
+    <div class="widget-container">
+      <script async src="https://tpscr.com/content?currency=rub&trs=410735&shmarker=625829&destination=MOW&target_host=www.aviasales.com%2Fsearch&locale=ru&limit=8&powered_by=true&primary=%230085FF&promo_id=4044&campaign_id=100" charset="utf-8"></script>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-buttons">
+      <a href="https://t.me/Mdenilkhanov" target="_blank" rel="noopener noreferrer" class="contact-button telegram" aria-label="Telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.53 16.96l.01-.01 6.6-6.4-6.5-3.86v3.9l-5.12-1.65v1.9l5.13 3.58-5.13 3.57v1.91z"/></svg>
+      </a>
+      <a href="https://wa.me/79635904147" target="_blank" rel="noopener noreferrer" class="contact-button whatsapp" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 3.5a10 10 0 00-16.96 12.25l-1.6 4.87 4.94-1.63a10 10 0 0013.62-15.49zm-1.22 13.94c-.23.66-1.3 1.25-1.8 1.33-.5.08-1.14.1-2.03-.4-1.3-.7-2.22-2.1-2.57-2.43-.35-.33-1.1-1.04-1.6-1.23-.5-.2-.87-.11-1.21-.06-.34.05-.88.27-1.34.55a6.44 6.44 0 01-2.22-1.35 8.23 8.23 0 01-1.5-2.4c-.23-.43-.25-.8-.26-1.04a1.4 1.4 0 01.25-1 .47.47 0 01.33-.27c.14-.02.35-.03.53-.03.18 0 .46.06.7.33.25.27.82.92.89 1 .07.07.14.13.25.22.11.08.23.18.3.3.07.12.07.23.05.33-.03.1-.19.26-.4.45-.2.2-.47.5-.64.67-.16.17-.3.32-.4.43-.1.1-.26.25-.4.4-.14.15-.3.3-.42.43a2 2 0 00-.2.27c-.05.1-.07.2-.08.27-.02.07-.02.14-.02.23 0 .11 0 .16.05.22.06.06.2.14.45.26.25.12.6.3 1 .52.4.23 1 .6 1.6.93.6.33 1.43.7 2.2.8.77.1 1.48 0 2.04-.15.56-.15 1.3-.6 1.52-1.2.22-.6.22-1 .16-1.15z"/></svg>
+      </a>
+    </div>
+    <div class="powered-by">Powered by Denilkhanov</div>
+  </footer>
+
+</body>
+</html>
