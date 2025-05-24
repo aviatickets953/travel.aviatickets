@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск авиабилетов</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
+
+    header {
+      background-color: #0C73FE;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .widgets-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .widget {
+      flex: 1 1 300px;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    .messengers {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .telegram {
+      background-color: #0088cc;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    footer {
+      background-color: #0C73FE;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .widgets-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .widget {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>Поиск авиабилетов</header>
+
+<div class="widgets-container">
+  <div class="widget">
+    <script async src="https://tp.media/content?demo=true&currency=rub&trs=410735&shmarker=625829&searchUrl=www.aviasales.com%2Fsearch&locale=ru&powered_by=true&origin=RUH&destination=IST&one_way=false&period=year&range=1%2C30&primary=%230C73FE&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+  </div>
+
+  <div class="widget">
+    <script async src="https://tpscr.com/content?currency=rub&trs=410735&shmarker=625829&searchUrl=www.aviasales.com%2Fsearch&locale=ru&powered_by=true&origin=MOW&destination=GRV&one_way=true&only_direct=false&period=year&range=1%2C30&primary=%230C73FE&color_background=%23ffffff&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+  </div>
+
+  <div class="widget">
+    <script async src="https://tpscr.com/content?currency=rub&trs=410735&shmarker=625829&destination=MOW&target_host=www.aviasales.com%2Fsearch&locale=ru&limit=8&powered_by=true&primary=%230085FF&promo_id=4044&campaign_id=100" charset="utf-8"></script>
+  </div>
+</div>
+
+<div class="messengers">
+  <button class="btn telegram">Telegram</button>
+  <button class="btn whatsapp">WhatsApp</button>
+</div>
+
+<footer>
+  Powered by Denilkhanov
+</footer>
+
+</body>
+</html>
